@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Filterable Image Gallerg</title>
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+		/>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<!-- Images Filter Buttons Section -->
+				<div class="row mt-5 justify-content-center" id="filter-buttons">
+					<div class="col-auto">
+						<button class="btn mb-2 me-1 active" data-filter="all">
+							Show all
+						</button>
+						<button class="btn mb-2 mx-1" data-filter="foto">Foto</button>
+						<button class="btn mb-2 mx-1" data-filter="view">View</button>
+						<button class="btn mb-2 mx-1" data-filter="people">People</button>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!-- Filterable Images / Cards Section -->
+			<section
+				class="row px-2 mt-4 gap-3 justify-content-center"
+				id="filterable-cards"
+			>
+				<!-- Foto -->
+				<div class="card p-0" data-name="foto">
+					<img src="foto/Foto Haikal.jpg" alt="img" />
+					<div class="card-body text-center">
+						<a href="foto/Foto Haikal.jpg" download="Foto.jpg">
+							<button class="btn btn-primary">Download</button>
+						</a>
+					</div>
+				</div>
+				<div class="card p-0" data-name="foto">
+					<img src="foto/Haikal-Arrahman-Cv.jpg.jpg" alt="img" />
+					<div class="card-body text-center">
+						<a href="foto/Haikal-Arrahman-Cv.jpg.jpg" download="foto.jpg">
+							<button class="btn btn-primary">Download</button>
+						</a>
+					</div>
+				</div>
+
+				<!-- view -->
+				
+			</section>
+		</main>
+	</body>
+</html>
