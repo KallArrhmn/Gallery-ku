@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8" />
-		<title>Filterable Image Gallery</title>
+		<title>Filterable Image Gallery Bootstrap | CodingNepal</title>
 		<link rel="stylesheet" href="style.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
@@ -12,25 +13,21 @@
 		<script src="script.js" defer></script>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<div class="row mt-5 justify-content-center" id="filter-buttons">
-					<div class="col-auto">
-						<button class="btn mb-2 me-1 active" data-filter="all">
-							Show all
-						</button>
-						<button class="btn mb-2 mx-1" data-filter="foto">Foto</button>
-						<button class="btn mb-2 mx-1" data-filter="view">View</button>
-					</div>
+		<div class="container">
+			<!-- Images Filter Buttons Section -->
+			<div class="row mt-5" id="filter-buttons">
+				<div class="col-12">
+					<button class="btn mb-2 me-1 active" data-filter="all">
+						Show all
+					</button>
+					<button class="btn mb-2 mx-1" data-filter="foto">Photo</button>
+					<button class="btn mb-2 mx-1" data-filter="view">View</button>
+					<a href="/about.html"
+						><button class="btn mb-2 mx-1" data-filter="about">About</button></a
+					>
 				</div>
-			</nav>
-		</header>
-		<main>
-			<section
-				class="row px-2 mt-4 gap-3 justify-content-center"
-				id="filterable-cards"
-			>
-				<!-- Foto -->
+			</div>
+			<div class="row px-2 mt-4 gap-3" id="filterable-cards">
 				<div class="card p-0" data-name="foto">
 					<img src="foto/Foto Haikal.jpg" alt="img" />
 					<div class="card-body text-center">
@@ -47,10 +44,7 @@
 						</a>
 					</div>
 				</div>
-
-				<!-- view -->
-				
-			</section>
-		</main>
+			</div>
+		</div>
 	</body>
 </html>
